@@ -28,7 +28,7 @@ class Country extends \yii\db\ActiveRecord
     {
         return [
             [['code', 'name'], 'required'],
-            [['population'], 'integer'],
+            [['population','timestamp'], 'integer'],
             [['code'], 'string', 'max' => 2],
             [['name'], 'string', 'max' => 52],
             [['code'], 'unique'],
@@ -44,6 +44,7 @@ class Country extends \yii\db\ActiveRecord
             'code' => 'Code',
             'name' => 'Name',
             'population' => 'Population',
+            'timestamp' => 'Created',
         ];
     }
 }
