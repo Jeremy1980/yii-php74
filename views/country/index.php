@@ -26,7 +26,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
             'code',
             'name',
             'population',
@@ -37,6 +36,11 @@ $this->params['breadcrumbs'][] = $this->title;
                  }
             ],
         ],
+        'pager' => [
+            'disabledPageCssClass' => 'disabled px-2 py-1 border',
+            'pageCssClass' => 'page-item',
+            'linkOptions' => [ 'class' => 'page-link' ]
+        ]
     ]); ?>
 
 

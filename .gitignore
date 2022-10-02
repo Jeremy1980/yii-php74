@@ -36,7 +36,6 @@ tests/_support/_generated
 /.vagrant
 
 #yii framework
-assets/*
 !assets/.gitignore
 protected/runtime/*
 !protected/runtime/.gitignore
