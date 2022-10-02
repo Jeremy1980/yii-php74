@@ -11,17 +11,17 @@ class m221001_153429_create_country_table extends Migration
     /* `yii2basic`.`country` */
     private $country_names = array('code','name','population','timestamp');
     private $country_values = array(
-         array( 'AU' ,'Australia' ,'24016400' ,'1664639111' )
-        ,array( 'BR' ,'Brazil' ,'205722000' ,'1664639111' )
-        ,array( 'CA' ,'Canada' ,'35985751' ,'1664639134' )
-        ,array( 'CN' ,'China' ,'1375210000' ,'1664639134' )
-        ,array( 'DE' ,'Germany' ,'81459000' ,'1664639134' )
-        ,array( 'FR' ,'France' ,'64513242' ,'1664639187' )
-        ,array( 'GB' ,'United Kingdom' ,'65097000','1664639187' )
-        ,array( 'IN' ,'India' ,'1285400000' ,'1664639187' )
-        ,array( 'PL' ,'Poland' ,'37510606' ,'1664639279' )
-        ,array( 'RU' ,'Russia' ,'146519759' ,'1664639279' )
-        ,array( 'US' ,'United States' ,'322976000' ,'1664639279' )
+         array( 'AUS' ,'Australia' ,'24016400' ,'1664639111' )
+        ,array( 'BRA' ,'Brazil' ,'205722000' ,'1664639111' )
+        ,array( 'CAN' ,'Canada' ,'35985751' ,'1664639134' )
+        ,array( 'CHN' ,'China' ,'1375210000' ,'1664639134' )
+        ,array( 'DEU' ,'Germany' ,'81459000' ,'1664639134' )
+        ,array( 'FRA' ,'France' ,'64513242' ,'1664639187' )
+        ,array( 'GBR' ,'United Kingdom' ,'65097000','1664639187' )
+        ,array( 'IND' ,'India' ,'1285400000' ,'1664639187' )
+        ,array( 'POL' ,'Poland' ,'37510606' ,'1664639279' )
+        ,array( 'RUS' ,'Russia' ,'146519759' ,'1664639279' )
+        ,array( 'USA' ,'United States' ,'322976000' ,'1664639279' )
     );
 
     /**
@@ -34,7 +34,7 @@ class m221001_153429_create_country_table extends Migration
         {
             $this->createTable('{{%country}}', [
                 'id' => $this->primaryKey(),
-                'code' => $this->char(2),
+                'code' => $this->char(3),
                 'name' => $this->char(52),
                 'population' => $this->integer(),
                 'timestamp' => $this->integer(),
